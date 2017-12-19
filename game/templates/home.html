@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>game</title>
+</head>
+<body>
+<h1 align="center">Welcome to the game</h1>
+
+	<table align="center" border=".5">
+		
+		<tr>
+			<th><font color="blue">Questions</font></th>
+			<th><font color="red">Answers</font></th>
+			
+		</tr>
+	{% for i in ob %}
+	<tr>
+		<td><font color="blue">{{i.Q}}</font></td>
+		<td><font color="red">{{i.A}}</font></td>
+		
+	</tr>	
+	{% endfor %}
+
+	
+	</table>
+
+	<p align="center">
+	<a href="fill/answer/"><button>Play Game</button></a>
+	&nbsp&nbsp&nbsp&nbsp
+	<a href="fill/question/"><button>Add Questions</button></a>
+	</p>
+	<footer><p align="center"><font color="Green">&copy managoy52@gmail.com &nbsp2017</font></p></footer>
+
+</body>
+</html>

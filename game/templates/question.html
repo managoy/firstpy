@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>question form</title>
+</head>
+<body>
+<font color="blue"><h3>Add your Questions and Answer:</h3></font>
+
+<form enctype="multipart/form-data" method="POST">
+	{% csrf_token %}
+	{{forms}}
+	<input type='submit' value="Add" />
+
+</form>
+
+</body>
+</html>
